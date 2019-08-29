@@ -1,0 +1,51 @@
+body{
+  background-color: #D8C3A5;
+  font-family: 'Roboto', sans-serif;
+  color: #8E8D8A;
+  margin: 0;
+}
+
+.main_container{
+  margin: 0 auto;
+  background-color: white;
+  padding: 5px 30px 20px;
+}
+
+h1, h2, h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #E85A4F;
+  font-size: 40px;
+}
+
+.pull-right{
+  float: right;
+}
+
+.active_nav_item{
+  border-bottom: solid 2px #E85A4F;
+}
+
+.center_horizontal{
+  margin: 0 auto!important;
+  float: none!important;
+}
+.not_displayed{
+
+display: none;
+}
+
+//afiseaza pe tot ecranul ce avem nevoie cand dam click
+html{
+
+scroll-behavior: smooth;
+
+}
+
+input[disabled]{
+
+opacity: .7;//important punem cand vrem sa ne supracrie inf
+}
+
+.invalid_field{
+border-bottom: solid 2px #E98074!important;//spune la brow ca regul asta sa o mostea indoferemt de ce gaseste

@@ -1,0 +1,32 @@
+.welcome{
+  height: 100vh;
+
+  background-image: url("../img/1.jpg");
+  background-position: center center;
+  background-size: auto;
+
+
+  border: solid 1px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-bottom: -70px;
+
+
+}
+
+
+.firstpage{
+  height: 100vh;
+
+  background-image: url("../img/butterfly.jpg");
+  background-position: center center;
+  background-size: auto;
+
+
+  border: solid 1px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-bottom: -70px;
+
+
+}

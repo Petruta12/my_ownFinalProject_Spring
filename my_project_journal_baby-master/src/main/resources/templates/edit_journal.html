@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="We build baby journal">
+    <meta name="author" content="Nineta">
+    <title>Edit </title>
+
+   
+
+ 
+
+    <link rel="stylesheet" type="text/css" href="css/home.css"> 
+   <link rel="stylesheet" type="text/css" href="css/nav.css">
+   <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+<div class="container">
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="MotherBelly.html">MotherBelly</a>
+        <a href="AboutMyMother.html">AboutMyMother</a>
+        <a class="active_nav_item" href="AboutMyFather.html">AboutMyFather</a>
+        <a href="Baby'sArrival.html">Baby'sArrival</a>
+        <a href="AboutBaby.html">AboutBaby</a>
+
+
+    </nav>
+</div>
+
+
+<div >
+		
+		<form th:action="@{/contact_form}" th:object="${aboutFather}" 
+			method="post">
+			<table>
+				
+				<tr>
+					<td>Id</td>
+					<td><input type="text" th:field="*{id}" readonly="readonly" /></td>
+				</tr>
+				
+	            <tr>
+					<td>Name</td>
+					<td><input type="text" th:field="*{name}" /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" th:field="*{email}" /></td>
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td><input type="text" th:field="*{phone}" /></td>
+				</tr>
+				<tr>
+					<td>Talent</td>
+					<td><input type="text" th:field="*{his_talent}" /></td>
+				</tr>
+				
+				<tr>
+					<td>Occupation</td>
+					<td><input type="text" th:field="*{his_occupation}" /></td>
+				</tr>
+				<tr>
+					<td>School</td>
+					<td><input type="text" th:field="*{his_school}" /></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"><button type="submit">Edit</button></td>
+				</tr>
+				
+				
+			</table>
+		</form>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="author" content="Nineta">
+    <title>Date of fathers</title>
+
+   
+
+ 
+
+    <link rel="stylesheet" type="text/css" href="css/home.css"> 
+   <link rel="stylesheet" type="text/css" href="css/nav.css">
+   <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div align="center">
+		<h1>Date of parents</h1>
+		<a th:href="@{/about_father}"> Add father</a> <br>
+		<br>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>Talent</th>
+					<th>Occupation</th>
+					<th>School</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="tati : ${listAboutFathers}">
+					<td th:text="${tati.id}">ID</td>
+					<td th:text="${tati.name}">Name</td>
+					<td th:text="${tati.email}">Email</td>
+					<td th:text="${tati.phone}">Phone</td>
+					<td th:text="${tati.his_talent}">Talent</td>
+					<td th:text="${tati.his_occupation}">Occupation</td>
+					<td th:text="${tati.his_school}">School</td>
+					
+					<td><a th:href="@{'/edit/' + ${tati.id}}">Edit</a>
+						&nbsp;&nbsp;&nbsp; 
+						<a th:href="@{'/delete/' + ${tati.id}}">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
+

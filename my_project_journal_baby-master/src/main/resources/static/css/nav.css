@@ -1,0 +1,24 @@
+nav{
+  display: block;
+  padding-bottom: 10px;
+  background-color: rgba(142,141,138, 0);
+  border: none;
+  box-shadow: none!important;
+}
+
+nav a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 10;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 20px;
+  padding: 5px 10px;
+}
+
+nav a:hover{
+  background-color: #E98074;
+  color: white;
+  transition: .2s linear;
+}
